@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme{
+  --color-primaryRed: #ea2e0e;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+#root{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.dark-theme{
+  @apply bg-white dark:bg-gray-900 text-black dark:text-gray-200;
+}
